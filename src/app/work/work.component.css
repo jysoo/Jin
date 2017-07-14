@@ -1,0 +1,83 @@
+.work {
+    position: relative;
+    background-color: #4682B4;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.wrapper {
+    min-height: 90vh;
+}
+
+h1 {
+    position: relative;
+    top: 10vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #F08080;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.container {
+    margin-block-start: 15vh;
+    margin-block-end: 10vh;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.content div {
+    max-width: 80vw;
+    display: inline-block;
+    text-align: center;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.project div {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    /*css trick*/
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+}
+
+.one {
+    background-image: url("../../assets/slb.png");  
+    color: #696969;  
+}
+
+.two {
+    background-image: url("../../assets/turinglab.png");
+    color: #696969;
+}
+
+.three {
+    background-image: url("../../assets/bloomberg.png");
+    color: #ffffff;
+}
+
+.four {
+    background-image: url("../../assets/london_urnu.png");
+    color: #696969;
+}
