@@ -15,6 +15,7 @@
     margin: 0 auto;
     margin-right: -50vw;
     transform: translate(-50%,-50%);
+    z-index: 0;
 }
 
 #jin {
@@ -28,8 +29,6 @@
     left: 0;
     background-color: #F0F8FF;
     z-index: -1;
-    min-width: 100vw;
-    max-width: 100vw;
     width: 100vw;
     height: 100vh;
 }
@@ -38,7 +37,5 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    min-width: 100vw;
-    max-width: 100vw;
     width: 100vw;
 }
