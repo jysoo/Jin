@@ -1,3 +1,8 @@
+.banner {
+    margin: 0;
+    margin-bottom: 0;
+}
+
 .hello {
     position: fixed;
     top: 45vh;
@@ -19,12 +24,14 @@
 
 .light {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     background-color: #F0F8FF;
     z-index: -1;
     min-width: 100vw;
     max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
 }
 
 .dark {
@@ -33,4 +40,5 @@
     left: 0;
     min-width: 100vw;
     max-width: 100vw;
+    width: 100vw;
 }
