@@ -1,9 +1,10 @@
 .about {
     position: relative;
+    top: -6vh; 
     left: 0vw;
     background-color: #4682B4;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 106vh;
     overflow: auto;
 }
 
