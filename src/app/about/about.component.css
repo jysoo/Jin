@@ -1,7 +1,7 @@
 .about {
     position: relative;
     top: 0; 
-    left: 0vw;
+    left: 0;
     background-color: #4682B4;
     width: 100vw;
     min-height: 106vh;
@@ -13,7 +13,8 @@
 }
 
 .container {
-    margin-block-start: 15vh;
+    position: relative;
+    top: 15vh;
     margin-block-end: 10vh;
 }
 

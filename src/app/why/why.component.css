@@ -12,9 +12,10 @@
 }
 
 .container {
-    margin-block-start: 15vh;
+    position: relative;
+    top: 15vh;
     margin-block-end: 10vh;
-}
+}    
 
 h1 {
     position: relative;
