@@ -28,14 +28,7 @@ export class ProjectsComponent implements OnInit {
     dialogRef.componentInstance.htmlContent = `
       Summer 2017
       <br><br>
-      Learning in progress. I will try to make my first contribution soon, and then update you with more details here. 
-      I have decided to dedicate a tile here for this project so that I can remind myself to persevere as well as to record my learnings and contributions.
-      <br><br>
-      Ceph is a distributed object, block, and file storage platform. The Reliable Autonomic Distributed Object Store (RADOS) 
-      provides applications with object, block, and file system storage in a single unified storage cluster. Thus, it enables users to improve 
-      IT infrastructure and manage a large amount of data effectively. 
-      <br><br>
-      Ceph is really cool and its <a href="https://ceph.com" target="_blank">website</a> provides great resources for us to learn more about it.
+      Coming soon ...
     `;
   }
 
