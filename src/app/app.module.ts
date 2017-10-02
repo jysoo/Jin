@@ -3,7 +3,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
 import { MdDialogModule, MdIconModule } from '@angular/material';
 import { NguiScrollableModule } from '@ngui/scrollable';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
@@ -46,7 +45,6 @@ import { SafeHtml } from './modal/safehtml.pipe';
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    BootstrapModalModule,
     MdDialogModule,
     MdIconModule,
     NguiScrollableModule,
