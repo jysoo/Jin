@@ -11,6 +11,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 import { MdIconRegistry } from '@angular/material';
 
 @Component({
+  providers: [MdIconRegistry],
   selector: 'app-links',
   templateUrl: './links.component.html',
   styleUrls: ['./links.component.css']
