@@ -24,11 +24,11 @@ export class ProjectsComponent implements OnInit {
 
   pop1() {
     let dialogRef = this.dialog.open(Modal);
-    dialogRef.componentInstance.title = "Open Source Contribution to Distributed Systems (pending)";
+    dialogRef.componentInstance.title = "Final Year Project in partnership with Microsoft: Designing Accessible Tech for the Visually Impaired (in progress)";
     dialogRef.componentInstance.htmlContent = `
-      Summer 2017
+      Oct 2017 - June 2018
       <br><br>
-      Coming soon ...
+      Details coming soon ...
     `;
   }
 
@@ -102,7 +102,7 @@ export class ProjectsComponent implements OnInit {
     To make the code robust, the tool takes in two inputs: a FIX message and a FIX Specification document. This ensures that the FIX message is parsed according to the particular version of FIX Specification that is adopted by the parties involved. The output file is an XML file that can be easily interpreted by humans as well as machines.
     <br><br>
     The highlight of this FIX message parser is that it provides detailed handling of Repeated Groups. There may be many instances of Repeated Groups in one tag. There may also be Repeated Groups nested within a Repeated Group. At the ‘root’ level, Repeated Groups will be indicated as instance 1, 2, 3 etc. Repeated Groups nested within, say, Repeated Group instance 1 will be indicated as instance 1:1, 1:2, 1:3, etc. And the indication of the nesting can go as deep as represented by the unparsed FIX message. 
-    The sample output shows the part of the parsed message that corresponds to the green segment of the input FIX message shown.
+    Here, the sample output shows the part of the parsed message that corresponds to the green segment of the input FIX message (dummy / test file).
     <br><br>
     <div style="text-align: center">
     Sample FIX Message (Input)<br>

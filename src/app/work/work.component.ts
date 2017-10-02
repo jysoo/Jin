@@ -29,9 +29,11 @@ export class WorkComponent implements OnInit {
     Software Engineering Intern<br>
     Apr 2017 - Sep 2017
     <br><br>
-    <a href="http://www.slb.com/about/rd/technology/abtc.aspx" target="_blank">Abingdon Technology Center (AbTC)</a> is the Schlumberger Center of Excellence for Reservoir Engineering. It develops software that enables oil and gas companies to make better decisions for reservoir development.
+    Schlumberger <a href="http://www.slb.com/about/rd/technology/abtc.aspx" target="_blank">Abingdon Technology Center (AbTC)</a> develops software solutions that enable oil and gas companies to make better decisions for reservoir development.
     <br><br>
-    I am an intern in the Field Development Planning team that develops commercial software with a focus on digital transformation from desktop applications to cloud-based services. So far, I have had the opportunity to encounter projects of different nature: experimental/demo, early stage, mid stage, and late stage, and also to utilise the technology stack which includes Docker, Kubernetes, Microsoft Azure, Google Cloud, Angular, Electron, Python, Golang.
+    I was an intern in the Field Development Planning team that develops commercial software solutions with focus on UX and digital transformation from desktop applications to cloud-based services. I worked on both the front end and back end, and encountered projects of different nature: experimental/demo, early stage, mid stage, and late stage. 
+    I also utilised the technology stack that includes Docker, Kubernetes, Microsoft Azure, Google Cloud (incl. Pub/Sub, Datastore), CouchDB, Grafana,
+    Swagger (API), Node.js, Angular (TypeScript, HTML, CSS), Python, Go / Golang.
       `;
   }
 

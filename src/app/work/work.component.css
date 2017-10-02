@@ -3,7 +3,7 @@
     background-color: #4682B4;
     width: 100vw;
     min-height: 100vh;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .wrapper {
@@ -12,7 +12,7 @@
 
 h1 {
     position: relative;
-    top: 10vh;
+    top: 8vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 24px;
@@ -23,8 +23,8 @@ h1 {
 
 .container {
     position: relative;
-    top: 15vh;
-    margin-block-end: 10vh;
+    top: 8vh;
+    margin-block-end: 8vh;
 }
 
 .content {

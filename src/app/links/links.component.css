@@ -4,7 +4,7 @@
     background-color: #4682B4;
     width: 100vw;
     min-height: 100vh;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .wrapper {
