@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MdDialogModule, MdIconModule } from '@angular/material';
+import { MatButtonModule, MatDialogModule, MatIconModule } from '@angular/material';
 import { NguiScrollableModule } from '@ngui/scrollable';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
@@ -45,8 +45,9 @@ import { SafeHtml } from './modal/safehtml.pipe';
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    MdDialogModule,
-    MdIconModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatIconModule,
     NguiScrollableModule,
     Ng2PageScrollModule.forRoot()
   ],

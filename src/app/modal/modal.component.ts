@@ -1,19 +1,19 @@
-import { MdDialogRef } from '@angular/material';
+import { MatButton, MatDialogRef } from '@angular/material';
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-modal',
     template:
     `
-    <h1 md-dialog-title>
+    <h1 mat-dialog-title>
         <div [innerHtml]="title | safeHtml"></div>
     </h1>
-    <md-dialog-content>
+    <mat-dialog-content>
         <div [innerHtml]="htmlContent | safeHtml"></div> 
-    </md-dialog-content>
+    </mat-dialog-content>
     <div class="close">
         <br><br>
-        <button md-button md-dialog-close>Close</button>
+        <button mat-button mat-dialog-close>Close</button>
     </div>
     `,
     styles: [
@@ -24,7 +24,7 @@ import { Component } from '@angular/core';
         font-size: 20px;
         color: #F08080;
     }
-    md-dialog-content {
+    mat-dialog-content {
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: 16px;
@@ -40,5 +40,5 @@ import { Component } from '@angular/core';
 export class Modal {
     title: string;
     htmlContent: string;
-    constructor(private dialogRef: MdDialogRef<Modal>){}
+    constructor(private dialogRef: MatDialogRef<Modal>){}
 }

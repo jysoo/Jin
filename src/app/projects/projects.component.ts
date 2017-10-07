@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ng2Parallax } from '../../../node_modules/ang2-parallax/ng2parallax'
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { MdDialog } from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { Modal } from '../modal/modal.component'
 
 @Component({
@@ -20,7 +20,7 @@ import { Modal } from '../modal/modal.component'
 
 export class ProjectsComponent implements OnInit {
 
-  constructor(private dialog: MdDialog) {}
+  constructor(private dialog: MatDialog) {}
 
   pop1() {
     let dialogRef = this.dialog.open(Modal);
@@ -38,13 +38,23 @@ export class ProjectsComponent implements OnInit {
     dialogRef.componentInstance.htmlContent = `
     Summer 2017
     <br><br>
-    <b>Welcome to Version 0 of my personal website!</b> To allow readers to follow along my story smoothly, I have decided to build a one-page site that relies predominantly on scrolling, minimising the need for clicking and navigating around. Users can click on the tiles in the Project and Work Experience sections to read the details, but they will appear as a modal pop-up dialog instead of redirecting you to a separate page and requiring you to navigate back to the main page again.
+    <b>Welcome to Version 0 of my personal website!</b> To allow readers to follow along my story smoothly, I have decided to build a one-page site that relies predominantly on scrolling, 
+    minimising the need for clicking and navigating around. Users can click on the tiles in the Project and Work Experience sections to read the details, but they will appear 
+    as a modal pop-up dialog instead of redirecting you to a separate page and requiring you to navigate back to the main page again.
     <br><br>
-    When the department wanted us to submit a personal portfolio as part of our industrial placement assessment, I decided to design and code my personal website from scratch using Angular, a TypeScript-based open-source front-end web application platform. The team that I am working with during my industrial placement uses Angular and also has a focus on user experience, so that sort of ties these things together nicely.
+    When the department wanted us to submit a personal portfolio as part of our industrial placement assessment, I decided to design and code my personal website from scratch using Angular, 
+    a TypeScript-based open-source front-end web application platform. The team that I was working with during my industrial placement uses Angular and also has a focus on user experience, 
+    so that sort of ties these things together nicely.
     <br><br>
-    I experimented with applying parallax effect on the clouds, creating vector graphics, using animations in the Angular style instead of the regular CSS style, and also learnt more about the quirks of CSS. I deployed the website as a cloud app using <a href="https://azure.microsoft.com/en-gb/services/app-service/" target="_blank">Microsoft Azure App Service</a> with the free <a href="https://imagine.microsoft.com/" target="_blank">Microsoft Imagine</a> subscription (yay!) that they offer for students. I set up a <a href="https://www.visualstudio.com/learn/what-is-continuous-integration/" target="_blank"><b>Continuous Integration (CI) pipeline</b></a> such that pushing changes to GitHub will trigger the build process on VSTS and update the Azure App automatically.
+    I experimented with applying parallax effect on the clouds, creating vector graphics, using animations in the Angular style instead of the regular CSS or JavaScript style, 
+    and also learnt more about the quirks of CSS. I deployed the website as a cloud app via <a href="https://azure.microsoft.com/en-gb/services/app-service/" target="_blank">Microsoft Azure App Service</a> 
+    using the free <a href="https://imagine.microsoft.com/" target="_blank">Microsoft Imagine</a> subscription (yay!) for students. I set up a 
+    <a href="https://www.visualstudio.com/learn/what-is-continuous-integration/" target="_blank"><b>Continuous Integration (CI) pipeline</b></a> such that pushing changes to GitHub will 
+    trigger the build process on VSTS and update the Azure App automatically.
     <br><br>
-    I also tried to improve the accessibility and usability of the site in small ways. For instance, in the html and Angular templates, the images include an alt text to cater for visually impaired readers who use screen readers. Besides that, using contrasting colours is a recommended approach to improve the user experience of readers with colour blindness. So far, the site looks decent on mobile. In the long run, I intend to dive deeper into responsive design. 
+    I also tried to improve the accessibility and usability of the site in small ways. For instance, in the html and Angular templates, the images include an alt text to cater for 
+    visually impaired readers who use screen readers. Besides that, using contrasting colours is a recommended approach to improve the user experience of readers with colour blindness. 
+    So far, the site looks decent on mobile. In the long run, I intend to dive deeper into responsive design. 
     `;
   }
 
@@ -54,7 +64,8 @@ export class ProjectsComponent implements OnInit {
     dialogRef.componentInstance.htmlContent = `
     Spring 2017
     <br><br>
-    This coursework was completed as a group for the new Embedded Systems module offered in our department. It involves an understanding of the hardware of the motor as well as the implementation of the software using the ARM mbed platform.
+    This coursework was completed as a group for the new Embedded Systems module offered in our department. It involves an understanding of the hardware of the motor as well as the 
+    implementation of the software using the ARM mbed platform.
     <br><br>
     The key concepts that are tested include real-time programming, multitasking, asynchronous tasks, and the use of threads and interrupts. We worked on the motor controller such that it can:
     <ul>
@@ -62,7 +73,8 @@ export class ProjectsComponent implements OnInit {
     <li>Spin at a defined angular velocity, either continuously or as a maximum while carrying out the previous spec</li>
     <li>Operate at normal precision, which is the nearest one rotation for number of rotations, and the nearest one rotations per second for angular velocity </li>
     <li>Operate at high precision, which is the nearest 0.01 rotations for number of rotations, and the nearest 0.01 rotations per second for angular velocity.</li>
-    <li>Play a melody while it is spinning by modulating the control voltage. It should repeat when it reaches the end of the input string that it interprets as musical notes. I used Pulse Width Modulation (PWM) for this task.</li>
+    <li>Play a melody while it is spinning by modulating the control voltage. It should repeat when it reaches the end of the input string that it interprets as musical notes. 
+    I used Pulse Width Modulation (PWM) for this task.</li>
     <li>Automatically tune its control parameters to optimise for a change in the connected moment of inertia.</li>
     </ul>
     The C++ code was submitted <a href="https://github.com/jysoo/embeddedsystem" target="_blank">here on Github</a>, and our team effort led to attaining an A for this coursework. 
@@ -87,8 +99,8 @@ export class ProjectsComponent implements OnInit {
     I was responsible for the Android App, which was a rewarding experience because it was my first time working with <b>Android</b>, <b>Java</b>, as well as <b>Bluetooth Low Energy</b>. 
     We helped one another with the phone app as well as the code for the ‘Sticker Tag’, and managed to attain A+ for the project.
     <br><br>
-    I have put together a <a href="https://github.com/jysoo/PickpocketPrevention/blob/master/AppDescription.pdf" target="_blank">brief summary here</a> to highlight code snippets and provide technical 
-    descriptions of how the Android App works.
+    I have put together a <a href="https://github.com/jysoo/PickpocketPrevention/blob/master/AppDescription.pdf" target="_blank">brief summary here</a> 
+    to highlight code snippets and provide technical descriptions of how the Android App works.
     `;
   }
 
@@ -97,11 +109,18 @@ export class ProjectsComponent implements OnInit {
     dialogRef.componentInstance.title = "Financial Information eXchange (FIX) Message Parser";
     dialogRef.componentInstance.htmlContent = `
     Summer 2014<br><br>
-    During my internship at Bloomberg, as an effort to integrate with Bloomberg’s Fixed Income Trading (FIT) team, I created a transform to parse FIX message into XML with detailed handling of Repeated Groups based on whichever version of FIX specification that the user inputs. The project was completed using a proprietary Visual Programming Language (VPL) platform based on the functional programming language, F#. For this project, I also had to familiarise myself with XML, XSD, and the Financial Information eXchange (FIX) Protocol. I also improved my soft skills through liaising and working with a different team.
+    During my internship at Bloomberg, as an effort to integrate with Bloomberg’s Fixed Income Trading (FIT) team, I created a transform to parse FIX message into XML 
+    with detailed handling of Repeated Groups based on whichever version of FIX specification that the user inputs. The project was completed 
+    using a proprietary Visual Programming Language (VPL) platform based on the functional programming language, F#. 
+    For this project, I also had to familiarise myself with XML, XSD, and the Financial Information eXchange (FIX) Protocol. 
+    I also improved my soft skills through liaising and working with a different team.
     <br><br>
-    To make the code robust, the tool takes in two inputs: a FIX message and a FIX Specification document. This ensures that the FIX message is parsed according to the particular version of FIX Specification that is adopted by the parties involved. The output file is an XML file that can be easily interpreted by humans as well as machines.
+    To make the code robust, the tool takes in two inputs: a FIX message and a FIX Specification document. This ensures that the FIX message is parsed according to the particular version 
+    of FIX Specification that is adopted by the parties involved. The output file is an XML file that can be easily interpreted by humans as well as machines.
     <br><br>
-    The highlight of this FIX message parser is that it provides detailed handling of Repeated Groups. There may be many instances of Repeated Groups in one tag. There may also be Repeated Groups nested within a Repeated Group. At the ‘root’ level, Repeated Groups will be indicated as instance 1, 2, 3 etc. Repeated Groups nested within, say, Repeated Group instance 1 will be indicated as instance 1:1, 1:2, 1:3, etc. And the indication of the nesting can go as deep as represented by the unparsed FIX message. 
+    The highlight of this FIX message parser is that it provides detailed handling of Repeated Groups. There may be many instances of Repeated Groups in one tag. 
+    There may also be Repeated Groups nested within a Repeated Group. At the ‘root’ level, Repeated Groups will be indicated as instance 1, 2, 3 etc. 
+    Repeated Groups nested within, say, Repeated Group instance 1 will be indicated as instance 1:1, 1:2, 1:3, etc. And the indication of the nesting can go as deep as represented by the unparsed FIX message. 
     Here, the sample output shows the part of the parsed message that corresponds to the green segment of the input FIX message (dummy / test file).
     <br><br>
     <div style="text-align: center">
@@ -120,9 +139,12 @@ export class ProjectsComponent implements OnInit {
     dialogRef.componentInstance.title = "Automation Tool to Generate Weekly Project Status Reports for Clients";
     dialogRef.componentInstance.htmlContent = `
     Summer 2014<br><br>
-    During my internship at Bloomberg, I created an Automation Tool to generate Weekly Project Status Reports for clients, with the aim of improving the standardisation of reports and helping team members to save time so that we can focus on other critical issues. The project was presented by my manager in Bloomberg's annual summit in New York so that it can be considered to be further developed and used by TSCI teams based in the Americas and APAC as well. 
+    During my internship at Bloomberg, I created an Automation Tool to generate Weekly Project Status Reports for clients, 
+    with the aim of improving the standardisation of reports and helping team members to save time so that we can focus on other critical issues. 
+    The project was presented by my manager in Bloomberg's annual summit in New York so that it can be considered to be further developed and used by TSCI teams based in the Americas and APAC as well. 
     <br><br>
-    This project was completed using a proprietary Visual Programming Language (VPL) platform based on the functional programming language, F#. It was my first time doing functional programming, thus it is both challenging and fun. I also had to familiarise myself with XML, XSD, and PDF syntax (which is the format of the generated report). 
+    This project was completed using a proprietary Visual Programming Language (VPL) platform based on the functional programming language, F#. It was my first time doing functional programming, 
+    thus it is both challenging and fun. I also had to familiarise myself with XML, XSD, and PDF syntax (which is the format of the generated report). 
     <br><br>
     Some key parts of the project are:
     <ul>
@@ -130,7 +152,10 @@ export class ProjectsComponent implements OnInit {
     <li>Logic to determine the appropriate places to insert a line break</li>
     <li>Logic for pagination</li>
     </ul>
-    One key challenge that I encountered was rendering images (e.g. company logo, header, footer) using PDF syntax. This is because the VPL did not support inputting control characters (e.g. DC1, DC2, DC3, FS), yet these special characters were present in the image data. Unlike using textual programming languages, I could not import libraries into the VPL platform. I also had to ensure the user workflow was as simple as possible. After some experiments, I managed to discover a workaround: represent DCT decoded image (jpeg) in Hex, which is just normal characters that can be represented on the VPL, and then use a double filter in the underlying PDF syntax to render the images correctly.
+    One key challenge that I encountered was rendering images (e.g. company logo, header, footer) using PDF syntax. This is because the VPL did not support inputting control characters (e.g. DC1, DC2, DC3, FS), 
+    yet these special characters were present in the image data. Unlike using textual programming languages, I could not import libraries into the VPL platform. 
+    I also had to ensure the user workflow was as simple as possible. After some experiments, I managed to discover a workaround: represent DCT decoded image (jpeg) in Hex, 
+    which is just normal characters that can be represented on the VPL, and then use a double filter in the underlying PDF syntax to render the images correctly.
     `;
   }
 

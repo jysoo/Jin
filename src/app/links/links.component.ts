@@ -8,10 +8,10 @@ import {
   transition
 } from '@angular/animations';
 import {DomSanitizer} from '@angular/platform-browser';
-import { MdIconRegistry } from '@angular/material';
+import { MatIconRegistry } from '@angular/material';
 
 @Component({
-  providers: [MdIconRegistry],
+  providers: [MatIconRegistry],
   selector: 'app-links',
   templateUrl: './links.component.html',
   styleUrls: ['./links.component.css']
@@ -19,7 +19,7 @@ import { MdIconRegistry } from '@angular/material';
 
 export class LinksComponent implements OnInit {
 
-  constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer) {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
         'cv',
         sanitizer.bypassSecurityTrustResourceUrl('assets/cv.svg'));
