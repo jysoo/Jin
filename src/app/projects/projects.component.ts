@@ -24,11 +24,16 @@ export class ProjectsComponent implements OnInit {
 
   pop1() {
     let dialogRef = this.dialog.open(Modal);
-    dialogRef.componentInstance.title = "Final Year Project in partnership with Microsoft: Designing Accessible Tech for the Visually Impaired (in progress)";
+    dialogRef.componentInstance.title = "Final Year Project in partnership with Microsoft: Tech Accessibility for the Visually Impaired (in progress)";
     dialogRef.componentInstance.htmlContent = `
       Oct 2017 - June 2018
       <br><br>
-      Details coming soon ...
+      Ideate, design, and implement solution for specific use cases to improve the user experience of the visually impaired 
+      when using smartphones and PCs to consume data for learning and productivity. 
+      Involve inexpensive tactile spatial navigation interface, voice feedback (directional audio à la 3D Soundscape, speech, non-speech sounds), 
+      AI/machine learning, and GPU/cloud.
+      <br><br>
+      More details coming soon ...
     `;
   }
 
