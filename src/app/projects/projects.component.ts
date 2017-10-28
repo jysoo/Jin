@@ -159,7 +159,7 @@ export class ProjectsComponent implements OnInit {
     </ul>
     One key challenge that I encountered was rendering images (e.g. company logo, header, footer) using PDF syntax, because the VPL did not support inputting control characters (e.g. DC1, DC2, DC3, FS), 
     yet these special characters were present in the image data. Unlike using textual programming languages, I could not import libraries into the VPL platform. 
-    I also had to ensure the user workflow was as simple as possible. After some experiments, I managed to workaround these issues appropriately.
+    I also had to ensure the user workflow was as simple as possible. After some experiments, I managed to overcome these issues effectively.
     `;
   }
 
