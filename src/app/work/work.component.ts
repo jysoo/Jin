@@ -81,6 +81,7 @@ As one of the team's efforts to contribute to areas beyond Trading Solutions, I 
 I created a transform to parse FIX message into XML with detailed handling of Repeated Groups based on whichever version of FIX specification that the user inputs. I also improved my soft skills through 
 liaising and working with a different team. 
 <br><br>
+During my time there, I had the chance to employ my own creativity when solving problems. I discovered more about the behaviour and quirks of some functions in the VPL, and wrote a guide on gotchas and sample usages for some functions. 
 It has been some time after I left and this division has since evolved and expanded into <a href="https://www.bbhub.io/solutions/sites/8/2015/09/CIS_Overview_BCH_DIG.pdf" target="_blank">Connectivity and Integration Solutions (CIS)</a>. 
 I am happy I still keep in touch with my former colleagues there.
       `;

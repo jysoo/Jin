@@ -126,10 +126,10 @@ export class ProjectsComponent implements OnInit {
     Here, the sample output shows the part of the parsed message that corresponds to the green segment of the input FIX message (dummy / test file).
     <br><br>
     <div style="text-align: center">
-    Sample FIX Message (Input)<br>
+    Sample FIX Message (Dummy Input)<br>
     <img src="../assets/input_fix.png" alt="Input" style="max-height: 50%; max-width:50%">
     <br><br>
-    Sample Snippet of Parsed FIX Message (Output)<br>
+    Sample Snippet of Parsed FIX Message (Dummy Output)<br>
     <img src="../assets/parsed_fix_part1.png" alt="Output" style="max-height: 50%; max-width:50%">
     <img src="../assets/parsed_fix_part2.png" alt="Output" style="max-height: 50%; max-width:50%">
     </div>
