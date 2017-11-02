@@ -27,9 +27,6 @@ export class LinksComponent implements OnInit {
         'email',
         sanitizer.bypassSecurityTrustResourceUrl('assets/email.svg'));
     iconRegistry.addSvgIcon(
-        'github',
-        sanitizer.bypassSecurityTrustResourceUrl('assets/github-logo.svg'));
-    iconRegistry.addSvgIcon(
         'linkedin',
         sanitizer.bypassSecurityTrustResourceUrl('assets/linkedin-logo.svg'));
   }

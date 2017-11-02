@@ -82,7 +82,6 @@ export class ProjectsComponent implements OnInit {
     I used Pulse Width Modulation (PWM) for this task.</li>
     <li>Automatically tune its control parameters to optimise for a change in the connected moment of inertia.</li>
     </ul>
-    The C++ code was submitted <a href="https://github.com/jysoo/embeddedsystem" target="_blank">here on Github</a>, and our team effort led to attaining an A for this coursework. 
     `;
   }
 
@@ -102,10 +101,8 @@ export class ProjectsComponent implements OnInit {
     <br><br>
     The second-year project included several aspects such as research, testing and validation, report writing, surveys, and prototyping. 
     I was responsible for the Android App, which was a rewarding experience because it was my first time working with <b>Android</b>, <b>Java</b>, as well as <b>Bluetooth Low Energy</b>. 
-    We helped one another with the phone app as well as the code for the ‘Sticker Tag’, and managed to attain A+ for the project.
+    Our team effort led to attaining A+ for the project.
     <br><br>
-    I have put together a <a href="https://github.com/jysoo/PickpocketPrevention/blob/master/AppDescription.pdf" target="_blank">brief summary here</a> 
-    to highlight code snippets and provide technical descriptions of how the Android App works.
     `;
   }
 
@@ -149,7 +146,7 @@ export class ProjectsComponent implements OnInit {
     The project was presented by my manager in Bloomberg's annual summit in New York so that it can be considered to be further developed and used by TSCI teams based in the Americas and APAC as well. 
     <br><br>
     This project was completed using a proprietary Visual Programming Language (VPL) platform based on the functional programming language, F#. It was my first time doing functional programming, 
-    thus it is both challenging and fun. I also had to familiarise myself with XML, XSD, and PDF syntax (which is the format of the generated report). 
+    thus it is both challenging and fun. I also had to familiarise myself with XML, XSD, XSLT, and PDF syntax (which is the format of the generated report). 
     <br><br>
     Some key parts of the project are:
     <ul>
