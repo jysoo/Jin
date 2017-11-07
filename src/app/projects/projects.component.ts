@@ -65,7 +65,7 @@ export class ProjectsComponent implements OnInit {
 
   pop3() {
     let dialogRef = this.dialog.open(Modal);
-    dialogRef.componentInstance.title = "Embedded System Motor Controller";
+    dialogRef.componentInstance.title = "Embedded Systems Motor Controller";
     dialogRef.componentInstance.htmlContent = `
     Spring 2017
     <br><br>
@@ -97,7 +97,8 @@ export class ProjectsComponent implements OnInit {
     <br><br>
     Stick-It is comprised of a 'Sticker Tag' that is attached to a valuable item (e.g. wallet), and a phone app that monitors the distance 
     between the two components. For the prototype, we used Adafruit Flora, but a much smaller chip can be used. If either the wallet or the phone 
-    is taken away, both components will ring to alert the user.
+    is taken away, both components will ring to alert the user. One challenge was to eliminate false positives as the RSSI values, an attribute 
+    that corresponds to power strength/distance, fluctuate and there are often outliers.
     <br><br>
     The second-year project included several aspects such as research, testing and validation, report writing, surveys, and prototyping. 
     I was responsible for the Android App, which was a rewarding experience because it was my first time working with <b>Android</b>, <b>Java</b>, as well as <b>Bluetooth Low Energy</b>. 
@@ -106,74 +107,16 @@ export class ProjectsComponent implements OnInit {
     `;
   }
 
-  pop5() {
-    let dialogRef = this.dialog.open(Modal);
-    dialogRef.componentInstance.title = "Financial Information eXchange (FIX) Message Parser";
-    dialogRef.componentInstance.htmlContent = `
-    Summer 2014<br><br>
-    During my internship at Bloomberg, as an effort to integrate with Bloomberg’s Fixed Income Trading (FIT) team, I created a transform to parse FIX message into XML 
-    with detailed handling of Repeated Groups based on whichever version of FIX specification that the user inputs. The project was completed 
-    using a proprietary Visual Programming Language (VPL) platform based on the functional programming language, F#. 
-    For this project, I also had to familiarise myself with XML, XSD, and the Financial Information eXchange (FIX) Protocol. 
-    I also improved my soft skills through liaising and working with a different team.
-    <br><br>
-    To make the code robust, the tool takes in two inputs: a FIX message and a FIX Specification document. This ensures that the FIX message is parsed according to the particular version 
-    of FIX Specification that is adopted by the parties involved. The output file is an XML file that can be easily interpreted by humans as well as machines.
-    <br><br>
-    The highlight of this FIX message parser is that it provides detailed handling of Repeated Groups. There may be many instances of Repeated Groups in one tag. 
-    There may also be Repeated Groups nested within a Repeated Group. At the ‘root’ level, Repeated Groups will be indicated as instance 1, 2, 3 etc. 
-    Repeated Groups nested within, say, Repeated Group instance 1 will be indicated as instance 1:1, 1:2, 1:3, etc. And the indication of the nesting can go as deep as represented by the unparsed FIX message. 
-    Here, the sample output shows the part of the parsed message that corresponds to the green segment of the input FIX message (dummy / test file).
-    <br><br>
-    <div style="text-align: center">
-    Sample FIX Message (Dummy Input)<br>
-    <img src="../assets/input_fix.png" alt="Input" style="max-height: 50%; max-width:50%">
-    <br><br>
-    Sample Snippet of Parsed FIX Message (Dummy Output)<br>
-    <img src="../assets/parsed_fix_part1.png" alt="Output" style="max-height: 50%; max-width:50%">
-    <img src="../assets/parsed_fix_part2.png" alt="Output" style="max-height: 50%; max-width:50%">
-    </div>
-    `;
-  }
-
-  pop6() {
-    let dialogRef = this.dialog.open(Modal);
-    dialogRef.componentInstance.title = "Automation Tool to Generate Weekly Project Status Reports for Clients";
-    dialogRef.componentInstance.htmlContent = `
-    Summer 2014<br><br>
-    During my internship at Bloomberg, I created an Automation Tool to generate Weekly Project Status Reports for clients, 
-    with the aim of improving the standardisation of reports and helping team members to save time so that we can focus on other critical issues. 
-    The project was presented by my manager in Bloomberg's annual summit in New York so that it can be considered to be further developed and used by TSCI teams based in the Americas and APAC as well. 
-    <br><br>
-    This project was completed using a proprietary Visual Programming Language (VPL) platform based on the functional programming language, F#. It was my first time doing functional programming, 
-    thus it is both challenging and fun. I also had to familiarise myself with XML, XSD, XSLT, and PDF syntax (which is the format of the generated report). 
-    <br><br>
-    Some key parts of the project are:
-    <ul>
-      <li>Dynamically creating and adjusting the sizes of the tables and their columns and rows according to the input data (which is obtained from the team’s project management tools)</li>
-    <li>Logic to determine the appropriate places to insert a line break</li>
-    <li>Logic for pagination</li>
-    </ul>
-    One key challenge that I encountered was rendering images (e.g. company logo, header, footer) using PDF syntax, because the VPL did not support inputting control characters (e.g. DC1, DC2, DC3, FS), 
-    yet these special characters were present in the image data. Unlike using textual programming languages, I could not import libraries into the VPL platform. 
-    I also had to ensure the user workflow was as simple as possible. After some experiments, I managed to overcome these issues effectively.
-    `;
-  }
-
   public isZoomed1;
   public isZoomed2;
   public isZoomed3;
   public isZoomed4;
-  public isZoomed5;
-  public isZoomed6;
 
   ngOnInit() { 
     this.isZoomed1 = 'false';
     this.isZoomed2 = 'false';
     this.isZoomed3 = 'false';
     this.isZoomed4 = 'false';
-    this.isZoomed5 = 'false';
-    this.isZoomed6 = 'false';
   }
 
   zoomIn1() {
@@ -199,17 +142,5 @@ export class ProjectsComponent implements OnInit {
   }
   zoomOut4() {
     this.isZoomed4 = 'false';
-  }
-  zoomIn5() {
-    this.isZoomed5 = 'true';
-  }
-  zoomOut5() {
-    this.isZoomed5 = 'false';
-  }
-  zoomIn6() {
-    this.isZoomed6 = 'true';
-  }
-  zoomOut6() {
-    this.isZoomed6 = 'false';
   }
 }

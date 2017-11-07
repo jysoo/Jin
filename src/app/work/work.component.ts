@@ -32,11 +32,12 @@ export class WorkComponent implements OnInit {
     Schlumberger <a href="http://www.slb.com/about/rd/technology/abtc.aspx" target="_blank">Abingdon Technology Center (AbTC)</a> develops software solutions that 
     enable oil and gas companies to make better decisions for reservoir development.
     <br><br>
-    I was an intern in the Field Development Planning team that develops commercial software solutions with focus on UX and digital transformation 
-    from desktop applications to cloud-based services. I worked on both the front end and back end, and encountered projects of different nature: experimental/demo, 
-    early stage, mid stage, and late stage. 
+    I was an intern in the Field Development Planning team that develops commercial software solutions with a development process involving user-centred design, UX, 
+    Agile methodology, and Continuous Delivery. I worked on both the front end and back end of cloud / web applications and services. I contributed to various 
+    products/stages: internal tools, early discovery, development, go live for user testing, go to market.
+    <br><br>
     I also utilised the technology stack that includes Docker, Kubernetes, Microsoft Azure, Google Cloud (incl. Pub/Sub, Datastore), CouchDB, Grafana,
-    Swagger (API), Node.js, Angular (TypeScript, HTML, CSS), Python, Go / Golang.
+    Swagger (application programming interface, API), Node.js, Angular (TypeScript, HTML, CSS), Python, Go / Golang.
       `;
   }
 
@@ -73,7 +74,11 @@ The main technical tool used by this team to design transforms is a proprietary 
 I did not have any foundation in functional programming back then, thus I had to adapt quickly in order to contribute effectively. I also had to familiarise myself with PDF syntax, XML, XSLT, XSD, 
 and the Financial Information eXchange ( FIX ) Protocol. Of course, I had to use the Bloomberg Terminal as well.
 <br><br>
-Here, I will highlight two main projects I completed during my stint. I created an Automation Tool to generate Weekly Project Status Reports for clients, with the aim of improving the standardisation 
+One challenge that I encountered was rendering images (e.g. company logo, header, footer) in PDF using the VPL, because the VPL did not support inputting control characters (e.g. DC1, DC2, DC3, FS), 
+yet these special characters were present in the image data. Unlike using textual programming languages, I could not import libraries into the VPL platform. 
+I also had to ensure the user workflow was as simple as possible. After some experiments, I managed to overcome these issues effectively.
+<br><br>
+I created an Automation Tool to generate Weekly Project Status Reports for clients, with the aim of improving the standardisation 
 of reports and helping team members to save time so that we can focus on other critical issues. The project was presented by my manager in Bloomberg's annual summit in New York so that it can be 
 considered to be further developed and used by TSCI teams based in the Americas and APAC as well.
 <br><br>
