@@ -6,6 +6,7 @@
     width: 100vw;
     min-height: 106vh;
     overflow: scroll;
+    margin-top: 0;
 }
 
 .wrapper {
